@@ -54,7 +54,7 @@ class MyTest(unittest.TestCase):
             self.dispositivo_2, database.database[1]))
         self.assertTrue(self.compare_dispositivos(
             self.dispositivo_3, database.database[2]))
-
+    
     def test_delete_by_id(self):
         database = Database(self.database_template)
         database.delete_by_id(id=2)
